@@ -36,7 +36,7 @@ export default function Navbar() {
           width: auto preserves the correct aspect ratio.
           ← Change "36px" below to resize the navbar logo.
         */}
-        <a href="#" className="flex items-center">
+        <a href="/" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
