@@ -46,6 +46,7 @@ export default function Hero() {
           style={{
             height: "72vh",
             width: "auto",
+            maxWidth: "none",
             opacity: 0.11,
             filter: "grayscale(0.5) sepia(0.6) saturate(1.8) hue-rotate(320deg)",
           }}
