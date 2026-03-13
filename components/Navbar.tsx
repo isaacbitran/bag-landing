@@ -16,7 +16,7 @@ import { Menu, X } from "lucide-react";
 const NAV_LINKS = [
   { label: "About",    href: "#mission" },
   { label: "Projects", href: "#projects" },
-  { label: "Team",     href: "#team" },
+  { label: "Team",     href: "/team" },
 ];
 
 const JOIN_LINK = { label: "Join", href: "#join" };

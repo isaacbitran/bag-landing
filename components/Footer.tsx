@@ -69,20 +69,13 @@ export default function Footer() {
               Plain <img> so height/width CSS is fully respected.
               ← Change height: "36px" to resize the footer logo.
             */}
-            <a href="#" className="group block">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/logo.png"
-                alt="Brown Analytics Group"
-                style={{
-                  height: "36px",                      // ← footer logo height
-                  width: "auto",
-                  filter: "brightness(0) invert(1)",   // white silhouette on dark bg
-                  opacity: 0.6,
-                  transition: "opacity 0.2s",
-                }}
-                className="group-hover:opacity-100"
-              />
+            <a href="/" className="group block">
+              <span className="
+                font-serif font-normal text-white/70 text-lg tracking-wide
+                group-hover:text-white transition-colors duration-200
+              ">
+                Brown Analytics Group
+              </span>
             </a>
 
             {/* Tagline */}
