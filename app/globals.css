@@ -1,0 +1,54 @@
+/* ─── GLOBAL STYLES ──────────────────────────────────────────────────────────*/
+
+/*
+  Two typefaces:
+  · Playfair Display — elegant serif for all headings (weights 400, 500, 600)
+  · Inter            — clean sans-serif for body / UI (weights 300, 400, 500)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── BASE ───────────────────────────────────────────────────────────────────*/
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Thin scrollbar on modern browsers for a cleaner look */
+    scrollbar-width: thin;
+    scrollbar-color: #e5e7eb transparent;
+  }
+
+  body {
+    /* Pure white page, near-black text, light sans-serif at 300 weight */
+    @apply bg-white text-ink font-sans font-light antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* All headings use the serif font by default */
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+/* ─── UTILITIES ──────────────────────────────────────────────────────────────*/
+@layer utilities {
+  /* Consistent generous section padding. Edit here to adjust all sections. */
+  .section-padding {
+    @apply px-8 md:px-16 lg:px-24 py-28;
+  }
+
+  /* Thin horizontal rule with optional fade at the edges */
+  .rule {
+    @apply border-t border-rule;
+  }
+
+  /*
+    Eyebrow label: tiny, wide-tracked, uppercase — used above all section titles.
+    Example: <span className="eyebrow">Our Mission</span>
+  */
+  .eyebrow {
+    @apply block text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-soft mb-4;
+  }
+}
