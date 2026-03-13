@@ -102,7 +102,9 @@ export default function Hero() {
 
           {/* Primary — filled on hover */}
           <a
-            href="#join"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfEbRYiUJzJdZxIzRkDs4m3VBqQ_NZ2_M6IegTbIOcQ3phwqw/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
               text-[11px] font-sans font-medium tracking-[0.22em] uppercase
               px-9 py-3.5
