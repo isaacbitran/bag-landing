@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-8 md:px-16 h-16 flex items-center justify-between">
 
         {/* ── Logo ── */}
-        <a href="/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+        <a href="/" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
@@ -45,8 +45,6 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
               className="
                 relative text-[11px] font-sans font-medium tracking-[0.16em] uppercase
                 text-mid hover:text-ink transition-colors duration-200 group/link
@@ -90,8 +88,6 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-[11px] font-medium tracking-[0.18em] uppercase text-mid hover:text-ink transition-colors"
               onClick={() => setMenuOpen(false)}
             >

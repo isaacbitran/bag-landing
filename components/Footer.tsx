@@ -15,27 +15,27 @@ const FOOTER_LINKS = [
   {
     heading: "Explore",
     links: [
-      { label: "About",    href: "#mission" },
-      { label: "Projects", href: "#" },
-      { label: "Team",     href: "#" },
-      { label: "Blog",     href: "#" },
+      { label: "About",    href: "#mission", external: false },
+      { label: "Projects", href: "#",        external: false },
+      { label: "Team",     href: "#",        external: false },
+      { label: "Blog",     href: "#",        external: false },
     ],
   },
   {
     heading: "Get Involved",
     links: [
-      { label: "Join BAG",   href: "#join" },
-      { label: "Workshops",  href: "#events" },
-      { label: "Consulting", href: "#" },
-      { label: "Research",   href: "#" },
+      { label: "Join BAG",   href: "#join",   external: false },
+      { label: "Workshops",  href: "#events", external: false },
+      { label: "Consulting", href: "#",       external: false },
+      { label: "Research",   href: "#",       external: false },
     ],
   },
   {
     heading: "Contact",
     links: [
-      { label: "Email",        href: "https://mail.google.com/mail/?view=cm&to=jack_oliver@brown.edu" },
-      { label: "Office Hours", href: "#" },
-      { label: "Partner",      href: "#" },
+      { label: "Email",        href: "https://mail.google.com/mail/?view=cm&to=jack_oliver@brown.edu", external: true },
+      { label: "Office Hours", href: "#", external: false },
+      { label: "Partner",      href: "#", external: false },
     ],
   },
 ];
@@ -69,7 +69,7 @@ export default function Footer() {
               Plain <img> so height/width CSS is fully respected.
               ← Change height: "36px" to resize the footer logo.
             */}
-            <a href="/" target="_blank" rel="noopener noreferrer" className="group block">
+            <a href="/" className="group block">
               <span className="
                 font-serif font-normal text-white/70 text-lg tracking-wide
                 group-hover:text-white transition-colors duration-200
@@ -118,8 +118,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                       className="text-sm font-sans font-light text-white/40 hover:text-white transition-colors duration-200"
                     >
                       {link.label}
