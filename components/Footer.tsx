@@ -17,17 +17,15 @@ const FOOTER_LINKS = [
     links: [
       { label: "About",    href: "#mission", external: false },
       { label: "Projects", href: "#",        external: false },
-      { label: "Team",     href: "#",        external: false },
-      { label: "Blog",     href: "#",        external: false },
+      { label: "Team",     href: "/team",    external: false },
     ],
   },
   {
     heading: "Get Involved",
     links: [
-      { label: "Join BAG",   href: "#join",   external: false },
+      { label: "Join BAG",   href: "https://docs.google.com/forms/d/e/1FAIpQLSfEbRYiUJzJdZxIzRkDs4m3VBqQ_NZ2_M6IegTbIOcQ3phwqw/viewform?usp=publish-editor", external: true },
       { label: "Workshops",  href: "#events", external: false },
       { label: "Consulting", href: "#",       external: false },
-      { label: "Research",   href: "#",       external: false },
     ],
   },
   {
@@ -35,7 +33,6 @@ const FOOTER_LINKS = [
     links: [
       { label: "Email",        href: "https://mail.google.com/mail/?view=cm&to=jack_oliver@brown.edu", external: true },
       { label: "Office Hours", href: "#", external: false },
-      { label: "Partner",      href: "#", external: false },
     ],
   },
 ];
