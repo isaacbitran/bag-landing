@@ -31,13 +31,19 @@ export default function Hero() {
   const watermarkRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let rafId: number;
     const handleScroll = () => {
-      if (watermarkRef.current) {
-        watermarkRef.current.style.transform = `translateY(${window.scrollY * 0.35}px)`;
-      }
+      rafId = requestAnimationFrame(() => {
+        if (watermarkRef.current) {
+          watermarkRef.current.style.transform = `translateY(${window.scrollY * 0.35}px)`;
+        }
+      });
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      cancelAnimationFrame(rafId);
+    };
   }, []);
 
   return (
@@ -54,6 +60,7 @@ export default function Hero() {
       <div
         ref={watermarkRef}
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
+        style={{ willChange: "transform" }}
         aria-hidden="true"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
