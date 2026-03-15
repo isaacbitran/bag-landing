@@ -32,6 +32,23 @@
   }
 }
 
+/* ─── PARALLAX WATERMARK ─────────────────────────────────────────────────────*/
+/*
+  Runs entirely on the compositor thread — zero JS, zero jank.
+  The watermark moves at ~35% of scroll speed over the first viewport height.
+  Falls back to no movement on browsers that don't support scroll-driven animations.
+*/
+@keyframes watermark-parallax {
+  from { transform: translateY(0); }
+  to   { transform: translateY(35vh); }
+}
+
+.watermark-parallax {
+  animation: watermark-parallax linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 100vh;
+}
+
 /* ─── UTILITIES ──────────────────────────────────────────────────────────────*/
 @layer utilities {
   /* Consistent generous section padding. Edit here to adjust all sections. */

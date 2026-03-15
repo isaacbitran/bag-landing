@@ -8,10 +8,6 @@
 //   · Logo size            — change the "90px" in the primary logo style
 // ──────────────────────────────────────────────────────────────────────────────
 
-"use client";
-
-import { useRef, useEffect } from "react";
-
 // ─── EDIT COPY ────────────────────────────────────────────────────────────────
 const HEADLINE = "Democratizing Data at Brown";
 const SUBHEADLINE =
@@ -28,18 +24,6 @@ const STATS = [
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Hero() {
-  const watermarkRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const update = () => {
-      if (watermarkRef.current) {
-        watermarkRef.current.style.transform = `translateY(${window.scrollY * 0.35}px)`;
-      }
-    };
-    update(); // set correct position before first scroll
-    window.addEventListener("scroll", update, { passive: true });
-    return () => window.removeEventListener("scroll", update);
-  }, []);
 
   return (
     <section
@@ -53,9 +37,7 @@ export default function Hero() {
           aria-hidden keeps it invisible to screen readers.
       ──────────────────────────────────────────────────────────────────────── */}
       <div
-        ref={watermarkRef}
-        className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
-        style={{ willChange: "transform" }}
+        className="watermark-parallax absolute inset-0 flex items-center justify-center pointer-events-none select-none"
         aria-hidden="true"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
