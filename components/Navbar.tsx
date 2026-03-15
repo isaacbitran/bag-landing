@@ -30,13 +30,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-8 md:px-16 h-16 flex items-center justify-between">
 
         {/* ── Logo ── */}
-        {/*
-          Plain <img> so height/width CSS is fully respected.
-          The logo is landscape (1406×768). Setting height in px with
-          width: auto preserves the correct aspect ratio.
-          ← Change "36px" below to resize the navbar logo.
-        */}
-        <a href="/" className="flex items-center">
+        <a href="/" target="_blank" rel="noopener noreferrer" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
@@ -51,6 +45,8 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 relative text-[11px] font-sans font-medium tracking-[0.16em] uppercase
                 text-mid hover:text-ink transition-colors duration-200 group/link
@@ -65,6 +61,8 @@ export default function Navbar() {
           {/* Join — ghost border button */}
           <a
             href={JOIN_LINK.href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="
               text-[11px] font-sans font-medium tracking-[0.16em] uppercase
               px-5 py-2 border border-ink text-ink
@@ -92,6 +90,8 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[11px] font-medium tracking-[0.18em] uppercase text-mid hover:text-ink transition-colors"
               onClick={() => setMenuOpen(false)}
             >
@@ -100,6 +100,8 @@ export default function Navbar() {
           ))}
           <a
             href={JOIN_LINK.href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="self-start text-[11px] font-medium tracking-[0.18em] uppercase px-5 py-2 border border-ink text-ink hover:bg-ink hover:text-white transition-colors"
             onClick={() => setMenuOpen(false)}
           >

@@ -1,12 +1,23 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// ─── EDIT FOUNDER ─────────────────────────────────────────────────────────────
-const FOUNDER = {
-  name: "Jack Oliver",
-  role: "Founder & President",
-  bio: "Jack founded Brown Analytics Group with a vision to make data science accessible to every student at Brown. His leadership has shaped the group's mission, culture, and direction since its inception.",
-};
+// ─── EDIT FOUNDERS ────────────────────────────────────────────────────────────
+const FOUNDERS = [
+  {
+    name: "Jack Oliver",
+    role: "Founder & President",
+    email: "jack_oliver@brown.edu",
+    photo: "/jack_oliver.jpg",
+    bio: "Jack founded Brown Analytics Group with a vision to make data science accessible to every student at Brown. His leadership has shaped the group's mission, culture, and direction since its inception.",
+  },
+  {
+    name: "Oscar Su",
+    role: "Co-Founder",
+    email: "william_o_su@brown.edu",
+    photo: null,
+    bio: "Oscar co-founded Brown Analytics Group alongside Jack, bringing a passion for data-driven thinking and a commitment to building an inclusive, student-led community at Brown.",
+  },
+];
 
 // ─── EDIT EBOARD MEMBERS ──────────────────────────────────────────────────────
 const EBOARD = [
@@ -110,31 +121,50 @@ export default function TeamPage() {
         <div className="h-px bg-rule" />
       </div>
 
-      {/* ── Founder ───────────────────────────────────────────────────────────── */}
+      {/* ── Founders ──────────────────────────────────────────────────────────── */}
       <section className="max-w-5xl mx-auto px-8 md:px-16 lg:px-24 py-24">
 
         {/* Section label */}
         <h2 className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-soft mb-16">
-          Founder
+          Founders
         </h2>
 
-        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-12">
-          <PhotoPlaceholder size="large" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
+          {FOUNDERS.map((founder) => (
+            <div key={founder.name} className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
+              {founder.photo ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={founder.photo}
+                  alt={founder.name}
+                  className="w-36 h-36 rounded-full object-cover flex-shrink-0"
+                />
+              ) : (
+                <PhotoPlaceholder size="large" />
+              )}
 
-          <div className="flex flex-col gap-4 text-center sm:text-left">
-            {/* Brown-red accent line */}
-            <div className="hidden sm:block w-8 h-px bg-brown-red mb-2" />
-
-            <h3 className="font-serif font-normal text-ink text-3xl">
-              {FOUNDER.name}
-            </h3>
-            <span className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-soft">
-              {FOUNDER.role}
-            </span>
-            <p className="font-sans font-light text-mid text-sm leading-[1.75] max-w-lg">
-              {FOUNDER.bio}
-            </p>
-          </div>
+              <div className="flex flex-col gap-4 text-center sm:text-left">
+                <div className="hidden sm:block w-8 h-px bg-brown-red mb-2" />
+                <h3 className="font-serif font-normal text-ink text-2xl">
+                  {founder.name}
+                </h3>
+                <span className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-soft">
+                  {founder.role}
+                </span>
+                <a
+                  href={`mailto:${founder.email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-sans text-mid hover:text-ink transition-colors duration-200"
+                >
+                  {founder.email}
+                </a>
+                <p className="font-sans font-light text-mid text-sm leading-[1.75]">
+                  {founder.bio}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

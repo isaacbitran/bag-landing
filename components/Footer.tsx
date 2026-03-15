@@ -69,7 +69,7 @@ export default function Footer() {
               Plain <img> so height/width CSS is fully respected.
               ← Change height: "36px" to resize the footer logo.
             */}
-            <a href="/" className="group block">
+            <a href="/" target="_blank" rel="noopener noreferrer" className="group block">
               <span className="
                 font-serif font-normal text-white/70 text-lg tracking-wide
                 group-hover:text-white transition-colors duration-200
@@ -90,6 +90,8 @@ export default function Footer() {
                 <a
                   key={s.label}
                   href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="
                     inline-flex items-center gap-1.5 text-xs font-sans
                     tracking-[0.1em] uppercase text-white/30
@@ -116,6 +118,8 @@ export default function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-sm font-sans font-light text-white/40 hover:text-white transition-colors duration-200"
                     >
                       {link.label}

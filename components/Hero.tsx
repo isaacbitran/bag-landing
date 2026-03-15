@@ -8,6 +8,10 @@
 //   · Logo size            — change the "90px" in the primary logo style
 // ──────────────────────────────────────────────────────────────────────────────
 
+"use client";
+
+import { useRef, useEffect } from "react";
+
 // ─── EDIT COPY ────────────────────────────────────────────────────────────────
 const HEADLINE = "Democratizing Data at Brown";
 const SUBHEADLINE =
@@ -24,6 +28,18 @@ const STATS = [
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Hero() {
+  const watermarkRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (watermarkRef.current) {
+        watermarkRef.current.style.transform = `translateY(${window.scrollY * 0.35}px)`;
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section
       id="hero"
@@ -36,6 +52,7 @@ export default function Hero() {
           aria-hidden keeps it invisible to screen readers.
       ──────────────────────────────────────────────────────────────────────── */}
       <div
+        ref={watermarkRef}
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
         aria-hidden="true"
       >
