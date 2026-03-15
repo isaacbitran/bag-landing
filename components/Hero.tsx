@@ -31,19 +31,14 @@ export default function Hero() {
   const watermarkRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let rafId: number;
-    const handleScroll = () => {
-      rafId = requestAnimationFrame(() => {
-        if (watermarkRef.current) {
-          watermarkRef.current.style.transform = `translateY(${window.scrollY * 0.35}px)`;
-        }
-      });
+    const update = () => {
+      if (watermarkRef.current) {
+        watermarkRef.current.style.transform = `translateY(${window.scrollY * 0.35}px)`;
+      }
     };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      cancelAnimationFrame(rafId);
-    };
+    update(); // set correct position before first scroll
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
   }, []);
 
   return (
