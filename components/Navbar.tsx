@@ -15,11 +15,10 @@ import { Menu, X } from "lucide-react";
 // ─── EDIT NAV LINKS ───────────────────────────────────────────────────────────
 const NAV_LINKS = [
   { label: "About",    href: "#mission" },
-  { label: "Projects", href: "#projects" },
   { label: "Team",     href: "/team" },
 ];
 
-const JOIN_LINK = { label: "Join", href: "https://docs.google.com/forms/d/e/1FAIpQLSfEbRYiUJzJdZxIzRkDs4m3VBqQ_NZ2_M6IegTbIOcQ3phwqw/viewform?usp=publish-editor" };
+const JOIN_LINK = { label: "Join", href: "https://forms.gle/ngkxudvbKg9dYSgv9" };
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Navbar() {

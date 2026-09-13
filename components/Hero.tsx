@@ -103,7 +103,7 @@ export default function Hero() {
 
           {/* Primary — filled on hover */}
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfEbRYiUJzJdZxIzRkDs4m3VBqQ_NZ2_M6IegTbIOcQ3phwqw/viewform?usp=publish-editor"
+            href="https://forms.gle/ngkxudvbKg9dYSgv9"
             target="_blank"
             rel="noopener noreferrer"
             className="

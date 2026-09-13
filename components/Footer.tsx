@@ -4,7 +4,7 @@
 //
 // TO EDIT:
 //   · FOOTER_LINKS  — update nav columns
-//   · SOCIAL_LINKS  — add real URLs for Instagram, LinkedIn, etc.
+//   · SOCIAL_LINKS  — add real URLs for LinkedIn, etc.
 //   · Tagline       — search "Every student" below
 // ──────────────────────────────────────────────────────────────────────────────
 
@@ -16,15 +16,13 @@ const FOOTER_LINKS = [
     heading: "Explore",
     links: [
       { label: "About",    href: "#mission", external: false },
-      { label: "Projects", href: "#",        external: false },
       { label: "Team",     href: "/team",    external: false },
     ],
   },
   {
     heading: "Get Involved",
     links: [
-      { label: "Join BAG",   href: "https://docs.google.com/forms/d/e/1FAIpQLSfEbRYiUJzJdZxIzRkDs4m3VBqQ_NZ2_M6IegTbIOcQ3phwqw/viewform?usp=publish-editor", external: true },
-      { label: "Workshops",  href: "#events", external: false },
+      { label: "Join BAG",   href: "https://forms.gle/ngkxudvbKg9dYSgv9", external: true },
       { label: "Consulting", href: "#",       external: false },
     ],
   },
@@ -40,7 +38,6 @@ const FOOTER_LINKS = [
 // ─── EDIT SOCIAL LINKS ───────────────────────────────────────────────────────
 // Label is shown as plain text — replace with icon if preferred.
 const SOCIAL_LINKS = [
-  { label: "Instagram", href: "https://www.instagram.com/we_in_yo_tube/?hl=en" },
   { label: "LinkedIn",  href: "https://www.linkedin.com/company/brown-analytics-group/posts/?feedView=all" },
 ];
 // ─────────────────────────────────────────────────────────────────────────────
