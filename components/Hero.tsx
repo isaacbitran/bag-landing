@@ -17,7 +17,6 @@ const SUBHEADLINE =
 // ─── EDIT STATS ──────────────────────────────────────────────────────────────
 const STATS = [
   { value: "50+",  label: "Members"      },
-  { value: "10+",  label: "Projects"     },
   { value: "3",    label: "Semesters"    },
   { value: "100%", label: "Student-led"  },
 ];
@@ -136,7 +135,7 @@ export default function Hero() {
             Update the STATS array at the top of this file to change numbers.
         ──────────────────────────────────────────────────────────────────── */}
         <div className="mt-20 pt-8 border-t border-rule w-full max-w-lg">
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-3">
             {STATS.map((stat, i) => (
               <div
                 key={stat.label}

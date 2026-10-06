@@ -15,7 +15,7 @@ const FOOTER_LINKS = [
   {
     heading: "Explore",
     links: [
-      { label: "About",    href: "#mission", external: false },
+      { label: "About",    href: "/#mission", external: false },
       { label: "Projects", href: "/projects", external: false },
       { label: "Team",     href: "/team",    external: false },
     ],
@@ -24,14 +24,13 @@ const FOOTER_LINKS = [
     heading: "Get Involved",
     links: [
       { label: "Join BAG",   href: "https://forms.gle/ngkxudvbKg9dYSgv9", external: true },
-      { label: "Consulting", href: "#",       external: false },
+      { label: "Consulting", href: "/projects", external: false },
     ],
   },
   {
     heading: "Contact",
     links: [
-      { label: "Email",        href: "https://mail.google.com/mail/?view=cm&to=jack_oliver@brown.edu", external: true },
-      { label: "Office Hours", href: "#", external: false },
+      { label: "Email",        href: "mailto:bag@brown.edu", external: false },
     ],
   },
 ];
