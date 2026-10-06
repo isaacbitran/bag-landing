@@ -14,7 +14,7 @@ const FOUNDERS = [
     name: "Oscar Su",
     role: "Co-Founder",
     email: "william_o_su@brown.edu",
-    photo: null,
+    photo: "/oscar_su.jpg",
     bio: "Oscar co-founded Brown Analytics Group alongside Jack, bringing a passion for data-driven thinking and a commitment to building an inclusive, student-led community at Brown.",
   },
 ];
