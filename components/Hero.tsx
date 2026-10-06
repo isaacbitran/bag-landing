@@ -119,7 +119,7 @@ export default function Hero() {
 
           {/* Secondary — text-only with animated underline */}
           <a
-            href="#mission"
+            href="/projects"
             className="
               text-[11px] font-sans font-medium tracking-[0.22em] uppercase
               text-soft hover:text-ink transition-colors duration-200
