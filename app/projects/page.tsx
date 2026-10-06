@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 type Project = {
   title: string;
   tag: string;
+  logo: string;
   body: string;
 };
 
@@ -13,6 +14,7 @@ const CURRENT_PROJECTS: Project[] = [
   {
     title: "Providence Transit Equity",
     tag: "Public Policy · RIPTA",
+    logo: "/logos/ripta.svg",
     body:
       "We're mapping where RIPTA bus service falls short of where it's needed most " +
       "in the Providence area. The team combines RIPTA's route and schedule data with " +
@@ -22,6 +24,7 @@ const CURRENT_PROJECTS: Project[] = [
   {
     title: "NCAA Basketball Transfer Portal",
     tag: "Sports Analytics",
+    logo: "/logos/ncaa.svg",
     body:
       "College basketball players move between programs through the transfer portal " +
       "more than ever. We're analyzing NCAA players' playstyles to see how they translate " +
@@ -34,6 +37,7 @@ const PAST_PROJECTS: Project[] = [
   {
     title: "Brown Football Recruiting",
     tag: "Sports Analytics · Brown Football",
+    logo: "/logos/brown-football.svg",
     body:
       "We built a website for the Brown football team that brings all of its past and " +
       "current recruits into one place and shows how each one is being recruited by " +
@@ -68,6 +72,12 @@ function ProjectList({ label, projects }: { label: string; projects: Project[] }
             </span>
 
             <div className="flex flex-col gap-3 self-start">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={project.logo}
+                alt=""
+                className="h-12 w-auto max-w-[160px] object-contain object-left mb-3"
+              />
               <h3 className="font-serif font-normal text-ink text-xl md:text-2xl tracking-[-0.01em]">
                 {project.title}
               </h3>
