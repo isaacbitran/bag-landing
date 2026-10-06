@@ -16,6 +16,7 @@ const FOOTER_LINKS = [
     heading: "Explore",
     links: [
       { label: "About",    href: "#mission", external: false },
+      { label: "Projects", href: "/projects", external: false },
       { label: "Team",     href: "/team",    external: false },
     ],
   },

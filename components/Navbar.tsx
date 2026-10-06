@@ -15,6 +15,7 @@ import { Menu, X } from "lucide-react";
 // ─── EDIT NAV LINKS ───────────────────────────────────────────────────────────
 const NAV_LINKS = [
   { label: "About",    href: "#mission" },
+  { label: "Projects", href: "/projects" },
   { label: "Team",     href: "/team" },
 ];
 
