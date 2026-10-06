@@ -35,7 +35,7 @@ const EBOARD: Member[] = [
     name: "Lorenzo Vannoni",
     role: "VP of Projects",
     email: "lorenzo_vannoni@brown.edu",
-    photo: null,
+    photo: "/lorenzo_vannoni.jpg",
     bio: "Lorenzo oversees BAG's project portfolio, scoping new projects with partners and making sure every team has a clear question, the right data, and a plan to deliver.",
   },
   {
