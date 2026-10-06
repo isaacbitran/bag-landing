@@ -42,7 +42,7 @@ const EBOARD: Member[] = [
     name: "Marshall Treese",
     role: "Head of Finance",
     email: null,
-    photo: null,
+    photo: "/marshall_treese.jpg",
     bio: "Marshall manages BAG's budget and funding, keeping the group's finances organized so members have the resources they need for projects and events.",
   },
   {
