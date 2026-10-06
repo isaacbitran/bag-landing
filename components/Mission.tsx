@@ -34,8 +34,8 @@ const PILLARS = [
     num:   "03",
     title: "Research",
     body:
-      "Original quantitative research in fields from public policy to sports analytics, " +
-      "conducted under faculty advisors. We write, we publish, we present.",
+      "Original quantitative research in fields from public policy to sports analytics. " +
+      "We write, we publish, we present.",
   },
 ];
 // ─────────────────────────────────────────────────────────────────────────────
