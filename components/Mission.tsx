@@ -10,8 +10,12 @@
 // ─── EDIT CONTENT ────────────────────────────────────────────────────────────
 const INTRO =
   "The Brown Analytics Group was founded on a simple premise: every student, " +
-  "regardless of background, should have access to the tools and knowledge that " +
-  "define modern decision-making.";
+  "regardless of background or major, should have access to the tools and knowledge " +
+  "that define modern decision-making. Our mission is to make data analytics accessible " +
+  "to all students, and we believe the best way to learn it is by doing. Our members " +
+  "work on real projects with real partners, from Brown Football to public transit " +
+  "in Providence, and every project is built to deliver real impact for the people " +
+  "we work with.";
 
 const PILLARS = [
   {
