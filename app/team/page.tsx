@@ -49,7 +49,7 @@ const EBOARD: Member[] = [
     name: "Alec Bonnard",
     role: "Head of Communications",
     email: "alec_bonnard@brown.edu",
-    photo: null,
+    photo: "/alec_bonnard.jpg",
     bio: "Alec runs BAG's outreach and communications, from member updates to how the group shares its work with partners and the wider Brown community.",
   },
   {
