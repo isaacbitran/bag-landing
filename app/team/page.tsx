@@ -56,7 +56,7 @@ const EBOARD: Member[] = [
     name: "Aki Pham",
     role: "Project Lead",
     email: "aki_pham@brown.edu",
-    photo: null,
+    photo: "/aki_pham.jpg",
     bio: "Aki leads a BAG project team, guiding members through the analysis from first data pull to final recommendations for the partner.",
   },
   {
