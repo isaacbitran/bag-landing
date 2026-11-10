@@ -39,7 +39,7 @@ export default function Hero() {
             height: "72vh",
             width: "auto",
             maxWidth: "none",
-            opacity: 0.11,
+            opacity: 0.07,
             filter: "grayscale(0.5) sepia(0.6) saturate(1.8) hue-rotate(320deg)",
           }}
         />
@@ -85,7 +85,7 @@ export default function Hero() {
         </h1>
 
         {/* ── Subheadline ── */}
-        <p className="mt-6 max-w-xl font-sans font-light text-mid text-base md:text-lg leading-[1.75]">
+        <p className="mt-6 max-w-xl font-sans font-normal text-mid text-base md:text-lg leading-[1.75]">
           {SUBHEADLINE}
         </p>
 

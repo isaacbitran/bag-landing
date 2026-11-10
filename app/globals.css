@@ -22,7 +22,7 @@
 
   body {
     /* Pure white page, near-black text, light sans-serif at 300 weight */
-    @apply bg-white text-ink font-sans font-light antialiased;
+    @apply bg-white text-ink font-sans font-normal antialiased;
     font-feature-settings: "kern" 1, "liga" 1;
   }
 

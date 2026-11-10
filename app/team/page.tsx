@@ -114,7 +114,7 @@ function MemberCard({ member }: { member: Member }) {
             {member.email}
           </a>
         )}
-        <p className="font-sans font-light text-mid text-sm leading-[1.75]">
+        <p className="font-sans font-normal text-mid text-sm leading-[1.75]">
           {member.bio}
         </p>
       </div>
