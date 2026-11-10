@@ -118,7 +118,7 @@ export default function ProjectsPage() {
           Projects
         </h1>
         <p className="mt-6 max-w-xl font-sans font-light text-mid text-base leading-[1.75]">
-          BAG teams take on real questions with real data, working with partners
+          BAC teams take on real questions with real data, working with partners
           on campus and in the Providence community.
         </p>
       </section>

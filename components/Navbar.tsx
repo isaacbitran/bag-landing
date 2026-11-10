@@ -34,7 +34,7 @@ export default function Navbar() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
-            alt="Brown Analytics Group"
+            alt="Brown Analytics Club"
             style={{ height: "36px", width: "auto" }}
           />
         </a>

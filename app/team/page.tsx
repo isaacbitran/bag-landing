@@ -16,14 +16,14 @@ const FOUNDERS: Member[] = [
     role: "Founder & President",
     email: "jack_oliver@brown.edu",
     photo: "/jack_oliver.jpg",
-    bio: "Jack founded Brown Analytics Group with a vision to make data science accessible to every student at Brown. His leadership has shaped the group's mission, culture, and direction since its inception.",
+    bio: "Jack founded Brown Analytics Club with a vision to make data science accessible to every student at Brown. His leadership has shaped the club's mission, culture, and direction since its inception.",
   },
   {
     name: "Oscar Su",
     role: "Co-Founder",
     email: "william_o_su@brown.edu",
     photo: "/oscar_su.jpg",
-    bio: "Oscar co-founded Brown Analytics Group alongside Jack, bringing a passion for data-driven thinking and a commitment to building an inclusive, student-led community at Brown.",
+    bio: "Oscar co-founded Brown Analytics Club alongside Jack, bringing a passion for data-driven thinking and a commitment to building an inclusive, student-led community at Brown.",
   },
 ];
 
@@ -36,35 +36,35 @@ const EBOARD: Member[] = [
     role: "VP of Projects",
     email: "lorenzo_vannoni@brown.edu",
     photo: "/lorenzo_vannoni.jpg",
-    bio: "Lorenzo oversees BAG's project portfolio, scoping new projects with partners and making sure every team has a clear question, the right data, and a plan to deliver.",
+    bio: "Lorenzo oversees BAC's project portfolio, scoping new projects with partners and making sure every team has a clear question, the right data, and a plan to deliver.",
   },
   {
     name: "Marshall Treese",
     role: "Head of Finance",
     email: "marshall_treese@brown.edu",
     photo: "/marshall_treese.jpg",
-    bio: "Marshall manages BAG's budget and funding, keeping the group's finances organized so members have the resources they need for projects and events.",
+    bio: "Marshall manages BAC's budget and funding, keeping the club's finances organized so members have the resources they need for projects and events.",
   },
   {
     name: "Alec Bonnard",
     role: "Head of Communications",
     email: "alec_bonnard@brown.edu",
     photo: "/alec_bonnard.jpg",
-    bio: "Alec runs BAG's outreach and communications, from member updates to how the group shares its work with partners and the wider Brown community.",
+    bio: "Alec runs BAC's outreach and communications, from member updates to how the club shares its work with partners and the wider Brown community.",
   },
   {
     name: "Aki Pham",
     role: "Project Lead",
     email: "aki_pham@brown.edu",
     photo: "/aki_pham.jpg",
-    bio: "Aki leads a BAG project team, guiding members through the analysis from first data pull to final recommendations for the partner.",
+    bio: "Aki leads a BAC project team, guiding members through the analysis from first data pull to final recommendations for the partner.",
   },
   {
     name: "Thomas Bould",
     role: "Project Lead",
     email: "thomas_bould@brown.edu",
     photo: null,
-    bio: "Thomas leads a BAG project team, coordinating the day-to-day work and helping members turn raw data into findings a partner can act on.",
+    bio: "Thomas leads a BAC project team, coordinating the day-to-day work and helping members turn raw data into findings a partner can act on.",
   },
 ];
 
@@ -149,7 +149,7 @@ export default function TeamPage() {
           Meet the Team
         </h1>
         <p className="mt-6 max-w-xl font-sans font-light text-mid text-base leading-[1.75]">
-          BAG is built by students, for students. Every member brings a unique
+          BAC is built by students, for students. Every member brings a unique
           perspective — united by a shared belief that data literacy should be
           open to everyone.
         </p>
