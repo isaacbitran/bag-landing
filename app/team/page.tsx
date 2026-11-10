@@ -36,7 +36,7 @@ const EBOARD: Member[] = [
     role: "VP of Projects",
     email: "lorenzo_vannoni@brown.edu",
     photo: "/lorenzo_vannoni.jpg",
-    bio: "Lorenzo oversees BAC's project portfolio, scoping new projects with partners and making sure every team has a clear question, the right data, and a plan to deliver. He also leads the Providence Transit Equity project, which maps where RIPTA bus service falls short of where it is needed most.",
+    bio: "Lorenzo oversees BAC's project portfolio, scoping new projects with partners and giving every team a clear plan. He also leads a project team.",
   },
   {
     name: "Marshall Treese",
