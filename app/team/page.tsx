@@ -128,7 +128,7 @@ export default function TeamPage() {
       <Navbar />
 
       {/* ── Page header ───────────────────────────────────────────────────────── */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 lg:px-24 pt-24 pb-16">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 pt-16 pb-6">
 
         {/* Eyebrow + rule */}
         <div className="flex items-center gap-3 mb-8">
@@ -144,14 +144,14 @@ export default function TeamPage() {
       </section>
 
       {/* ── Founders ──────────────────────────────────────────────────────────── */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 lg:px-24 py-24">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 pt-6 pb-14">
 
         {/* Section label */}
-        <h2 className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-soft mb-16">
+        <h2 className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-soft mb-10">
           Founders
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
           {FOUNDERS.map((founder) => (
             <MemberCard key={founder.name} member={founder} />
           ))}
@@ -159,13 +159,13 @@ export default function TeamPage() {
       </section>
 
       {/* ── Executive Board ───────────────────────────────────────────────────── */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 lg:px-24 pb-24">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 pb-20">
 
-        <h2 className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-soft mb-16">
+        <h2 className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-soft mb-10">
           Executive Board
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
           {EBOARD.map((member) => (
             <MemberCard key={member.name} member={member} />
           ))}
