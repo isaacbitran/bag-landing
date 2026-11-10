@@ -21,8 +21,8 @@ module.exports = {
       colors: {
         // Neutrals — the primary palette
         ink:    "#111111", // near-black for main text
-        "mid":  "#6B7280", // medium gray for secondary text
-        "soft": "#9CA3AF", // light gray for captions
+        "mid":  "#374151", // dark gray for secondary text (darkened for readability)
+        "soft": "#4B5563", // mid gray for captions (darkened for readability)
         rule:   "#E5E7EB", // thin horizontal rule color
 
         // Brown University official colors — accent use ONLY

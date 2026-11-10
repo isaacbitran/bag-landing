@@ -64,9 +64,9 @@ function ProjectList({ label, projects }: { label: string; projects: Project[] }
             group
           ">
             <span className="
-              font-serif font-normal text-brown-red/25 text-lg
+              font-serif font-normal text-brown-red/70 text-lg
               md:pt-0.5 self-start
-              group-hover:text-brown-red/50 transition-colors duration-300
+              group-hover:text-brown-red transition-colors duration-300
             ">
               {String(i + 1).padStart(2, "0")}
             </span>
@@ -86,7 +86,7 @@ function ProjectList({ label, projects }: { label: string; projects: Project[] }
               </span>
             </div>
 
-            <p className="font-sans font-light text-mid text-sm md:text-base leading-[1.8]">
+            <p className="font-sans font-normal text-mid text-sm md:text-base leading-[1.8]">
               {project.body}
             </p>
           </div>

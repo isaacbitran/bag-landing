@@ -47,7 +47,7 @@ export default function Footer() {
 
   return (
     /* Near-black footer using the ink color */
-    <footer className="bg-ink text-white/50">
+    <footer className="bg-ink text-white/80">
 
       {/* ── Thin brownred accent line at top ── */}
       <div className="h-px bg-gradient-to-r from-transparent via-brown-red/60 to-transparent" />
@@ -65,7 +65,7 @@ export default function Footer() {
             */}
             <a href="/" className="group block">
               <span className="
-                font-serif font-normal text-white/70 text-lg tracking-wide
+                font-serif font-normal text-white/95 text-lg tracking-wide
                 group-hover:text-white transition-colors duration-200
               ">
                 Brown Analytics Club
@@ -73,7 +73,7 @@ export default function Footer() {
             </a>
 
             {/* Tagline */}
-            <p className="font-sans font-light text-white/35 text-sm leading-relaxed">
+            <p className="font-sans font-normal text-white/80 text-sm leading-relaxed">
               {/* ← edit tagline here */}
               Every student deserves access to the tools that shape our world.
             </p>
@@ -88,7 +88,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="
                     inline-flex items-center gap-1.5 text-xs font-sans
-                    tracking-[0.1em] uppercase text-white/30
+                    tracking-[0.1em] uppercase text-white/75
                     hover:text-white transition-colors duration-200
                   "
                 >
@@ -103,7 +103,7 @@ export default function Footer() {
           {FOOTER_LINKS.map((col) => (
             <div key={col.heading} className="flex flex-col gap-5">
               {/* Column heading */}
-              <h4 className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-white/25">
+              <h4 className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-white/70">
                 {col.heading}
               </h4>
               {/* Links */}
@@ -113,7 +113,7 @@ export default function Footer() {
                     <a
                       href={link.href}
                       {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                      className="text-sm font-sans font-light text-white/40 hover:text-white transition-colors duration-200"
+                      className="text-sm font-sans font-normal text-white/85 hover:text-white transition-colors duration-200"
                     >
                       {link.label}
                     </a>
@@ -130,7 +130,7 @@ export default function Footer() {
         <div className="
           max-w-5xl mx-auto px-8 md:px-16 lg:px-24 py-6
           flex flex-col sm:flex-row items-center justify-between gap-3
-          text-[11px] font-sans font-light text-white/20 tracking-[0.06em]
+          text-[11px] font-sans font-normal text-white/70 tracking-[0.06em]
         ">
           <span>
             © {year} Brown Analytics Club — All rights reserved
@@ -141,7 +141,7 @@ export default function Footer() {
               href="https://www.brown.edu"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-white/50 transition-colors"
+              className="underline underline-offset-2 hover:text-white transition-colors"
             >
               Brown University
             </a>
