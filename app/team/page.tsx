@@ -59,13 +59,6 @@ const EBOARD: Member[] = [
     photo: "/aki_pham.jpg",
     bio: "Aki leads a BAC project team, guiding members through the analysis from first data pull to final recommendations for the partner.",
   },
-  {
-    name: "Thomas Bould",
-    role: "Project Lead",
-    email: "thomas_bould@brown.edu",
-    photo: null,
-    bio: "Thomas leads a BAC project team, coordinating the day-to-day work and helping members turn raw data into findings a partner can act on.",
-  },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
