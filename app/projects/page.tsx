@@ -48,7 +48,7 @@ const PAST_PROJECTS: Project[] = [
 
 function ProjectList({ label, projects }: { label: string; projects: Project[] }) {
   return (
-    <section className="max-w-5xl mx-auto px-8 md:px-16 lg:px-24 pb-24">
+    <section className="max-w-6xl mx-auto px-8 md:px-16 pb-16">
       <h2 className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-soft mb-8">
         {label}
       </h2>
@@ -60,7 +60,7 @@ function ProjectList({ label, projects }: { label: string; projects: Project[] }
           <div className="
             grid grid-cols-1 md:grid-cols-[64px_1fr_2fr]
             gap-y-4 md:gap-x-12
-            py-10 md:py-12
+            py-8 md:py-10
             group
           ">
             <span className="
@@ -104,7 +104,7 @@ export default function ProjectsPage() {
       <Navbar />
 
       {/* ── Page header ───────────────────────────────────────────────────────── */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 lg:px-24 pt-24 pb-24">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 pt-16 pb-10">
 
         {/* Eyebrow + rule */}
         <div className="flex items-center gap-3 mb-8">

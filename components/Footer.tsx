@@ -53,7 +53,7 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-brown-red/60 to-transparent" />
 
       {/* ── Main footer body ── */}
-      <div className="max-w-5xl mx-auto px-8 md:px-16 lg:px-24 py-20">
+      <div className="max-w-6xl mx-auto px-8 md:px-16 py-14">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_1fr] gap-16 md:gap-8">
 
           {/* Brand column */}
@@ -128,7 +128,7 @@ export default function Footer() {
       {/* ── Bottom bar ── */}
       <div className="border-t border-white/5">
         <div className="
-          max-w-5xl mx-auto px-8 md:px-16 lg:px-24 py-6
+          max-w-6xl mx-auto px-8 md:px-16 py-6
           flex flex-col sm:flex-row items-center justify-between gap-3
           text-[11px] font-sans font-normal text-white/70 tracking-[0.06em]
         ">

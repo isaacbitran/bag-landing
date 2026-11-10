@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative bg-white min-h-[92vh] flex flex-col justify-center items-center text-center overflow-hidden"
+      className="relative bg-white min-h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center overflow-hidden"
     >
 
       {/* ── Ghost watermark ──────────────────────────────────────────────────
@@ -57,7 +57,7 @@ export default function Hero() {
         <img
           src="/logo.png"
           alt="Brown Analytics Club"
-          style={{ height: "96px", width: "auto", mixBlendMode: "multiply" }}   // ← hero logo size; multiply hides the logo's white background
+          style={{ height: "128px", width: "auto", mixBlendMode: "multiply" }}   // ← hero logo size; multiply hides the logo's white background
         />
 
         {/* ── Decorative rule ── */}
