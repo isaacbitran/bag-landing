@@ -6,7 +6,6 @@
 
 import Navbar  from "@/components/Navbar";
 import Hero    from "@/components/Hero";
-import Mission from "@/components/Mission";
 import Footer  from "@/components/Footer";
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <Mission />
       <Footer />
     </main>
   );
