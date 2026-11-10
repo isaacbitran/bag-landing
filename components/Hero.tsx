@@ -11,7 +11,7 @@
 // ─── EDIT COPY ────────────────────────────────────────────────────────────────
 const HEADLINE = "Democratizing Data at Brown";
 const SUBHEADLINE =
-  "A student-led group advancing data literacy through workshops, " +
+  "A student-led club advancing data literacy through workshops, " +
   "real-world consulting, and original research — open to every Brown student.";
 
 // ─── EDIT STATS ──────────────────────────────────────────────────────────────
@@ -64,7 +64,7 @@ export default function Hero() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/logo.png"
-          alt="Brown Analytics Group"
+          alt="Brown Analytics Club"
           style={{ height: "96px", width: "auto" }}   // ← hero logo size
         />
 
@@ -113,7 +113,7 @@ export default function Hero() {
               transition-all duration-200
             "
           >
-            Join the Group  {/* ← edit button label */}
+            Join the Club  {/* ← edit button label */}
           </a>
 
           {/* Secondary — text-only with animated underline */}

@@ -23,7 +23,7 @@ const FOOTER_LINKS = [
   {
     heading: "Get Involved",
     links: [
-      { label: "Join BAG",   href: "https://forms.gle/ngkxudvbKg9dYSgv9", external: true },
+      { label: "Join BAC",   href: "https://forms.gle/ngkxudvbKg9dYSgv9", external: true },
       { label: "Consulting", href: "/projects", external: false },
     ],
   },
@@ -68,7 +68,7 @@ export default function Footer() {
                 font-serif font-normal text-white/70 text-lg tracking-wide
                 group-hover:text-white transition-colors duration-200
               ">
-                Brown Analytics Group
+                Brown Analytics Club
               </span>
             </a>
 
@@ -133,7 +133,7 @@ export default function Footer() {
           text-[11px] font-sans font-light text-white/20 tracking-[0.06em]
         ">
           <span>
-            © {year} Brown Analytics Group — All rights reserved
+            © {year} Brown Analytics Club — All rights reserved
           </span>
           <span className="flex items-center gap-1.5">
             Made with care at{" "}

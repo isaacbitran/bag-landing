@@ -9,7 +9,7 @@
 
 // ─── EDIT CONTENT ────────────────────────────────────────────────────────────
 const INTRO =
-  "The Brown Analytics Group was founded on a simple premise: every student, " +
+  "The Brown Analytics Club was founded on a simple premise: every student, " +
   "regardless of background or major, should have access to the tools and knowledge " +
   "that define modern decision-making. Our mission is to make data analytics accessible " +
   "to all students, and we believe the best way to learn it is by doing. Our members " +
@@ -55,7 +55,7 @@ export default function Mission() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo.png"
-            alt="Brown Analytics Group"
+            alt="Brown Analytics Club"
             style={{ height: "28px", width: "auto", opacity: 0.25 }}
           />
         </div>

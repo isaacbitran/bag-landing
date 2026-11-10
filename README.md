@@ -1,6 +1,6 @@
-# Brown Analytics Group
+# Brown Analytics Club
 
-Landing site for Brown Analytics Group, a student group doing data education, consulting and research at Brown.
+Landing site for Brown Analytics Club, a student club doing data education, consulting and research at Brown.
 
 Live: https://bag-landing-eight.vercel.app
 
