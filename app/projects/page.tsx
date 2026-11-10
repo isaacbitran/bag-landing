@@ -117,10 +117,6 @@ export default function ProjectsPage() {
         <h1 className="font-serif font-normal text-ink text-5xl md:text-6xl leading-[1.05] max-w-lg">
           Projects
         </h1>
-        <p className="mt-6 max-w-xl font-sans font-light text-mid text-base leading-[1.75]">
-          BAC teams take on real questions with real data, working with partners
-          on campus and in the Providence community.
-        </p>
       </section>
 
       <ProjectList label="Current Projects" projects={CURRENT_PROJECTS} />

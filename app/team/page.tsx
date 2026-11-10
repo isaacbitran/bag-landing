@@ -141,11 +141,6 @@ export default function TeamPage() {
         <h1 className="font-serif font-normal text-ink text-5xl md:text-6xl leading-[1.05] max-w-lg">
           Meet the Team
         </h1>
-        <p className="mt-6 max-w-xl font-sans font-light text-mid text-base leading-[1.75]">
-          BAC is built by students, for students. Every member brings a unique
-          perspective — united by a shared belief that data literacy should be
-          open to everyone.
-        </p>
       </section>
 
       {/* ── Founders ──────────────────────────────────────────────────────────── */}

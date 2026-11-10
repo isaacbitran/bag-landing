@@ -1,25 +1,17 @@
 // ─── HERO ─────────────────────────────────────────────────────────────────────
 // Clean white hero — logo displayed in full natural color, no filter tricks.
-// Includes a faint watermark behind the content and a stats row at the bottom.
+// Title page: logo, headline, subheadline and the two buttons, over a faint watermark.
 //
 // TO EDIT:
 //   · HEADLINE, SUBHEADLINE — main text
-//   · STATS array          — numbers shown in the bottom row
 //   · Logo size            — change the "90px" in the primary logo style
 // ──────────────────────────────────────────────────────────────────────────────
 
 // ─── EDIT COPY ────────────────────────────────────────────────────────────────
 const HEADLINE = "Democratizing Data at Brown";
 const SUBHEADLINE =
-  "A student-led club advancing data literacy through workshops, " +
-  "real-world consulting, and original research — open to every Brown student.";
+  "Workshops, partner projects and research for Brown students who want to work with data.";
 
-// ─── EDIT STATS ──────────────────────────────────────────────────────────────
-const STATS = [
-  { value: "50+",  label: "Members"      },
-  { value: "3",    label: "Semesters"    },
-  { value: "100%", label: "Student-led"  },
-];
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Hero() {
@@ -65,7 +57,7 @@ export default function Hero() {
         <img
           src="/logo.png"
           alt="Brown Analytics Club"
-          style={{ height: "96px", width: "auto" }}   // ← hero logo size
+          style={{ height: "96px", width: "auto", mixBlendMode: "multiply" }}   // ← hero logo size; multiply hides the logo's white background
         />
 
         {/* ── Decorative rule ── */}
@@ -128,33 +120,6 @@ export default function Hero() {
             Explore Our Work
             <span className="text-brown-red">→</span>
           </a>
-        </div>
-
-        {/* ── Stats row ────────────────────────────────────────────────────
-            Simple numerical facts separated by thin vertical rules.
-            Update the STATS array at the top of this file to change numbers.
-        ──────────────────────────────────────────────────────────────────── */}
-        <div className="mt-20 pt-8 border-t border-rule w-full max-w-lg">
-          <div className="grid grid-cols-3">
-            {STATS.map((stat, i) => (
-              <div
-                key={stat.label}
-                className={`
-                  flex flex-col items-center gap-1 py-2
-                  ${i < STATS.length - 1 ? "border-r border-rule" : ""}
-                `}
-              >
-                {/* Value in Playfair Display */}
-                <span className="font-serif font-normal text-ink text-2xl leading-none">
-                  {stat.value}
-                </span>
-                {/* Label in small-caps style */}
-                <span className="text-[9px] font-sans font-medium text-soft tracking-[0.18em] uppercase mt-1">
-                  {stat.label}
-                </span>
-              </div>
-            ))}
-          </div>
         </div>
 
       </div>
